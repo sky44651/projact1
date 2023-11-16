@@ -1,0 +1,54 @@
+#container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px dashed #bcbcbc;
+    background-color: white;
+}
+
+#container-header {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px dashed red;
+}
+
+#knu-content{
+    width: 580px;
+    padding: 20px;
+    margin-bottom: 20px;
+    float: left;
+    border: 1px dashed blue;
+}
+
+
+#knu-sidebar{
+    width: 260px;
+    padding: 20px;
+    margin-bottom: 20px;
+    float: right;
+    border: 1px solid black;
+}
+
+
+
+#knu-footer{
+    clear: both;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+@media screen and (max-width:480px){
+    #container{
+        width: auto;
+    }
+
+    #knu-content{
+        float: none;
+        width: auto;
+    }
+
+    #knu-sidebar{
+        float: none;
+        width: auto;
+    }
+}
