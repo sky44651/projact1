@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <style>
+        html {
+            font-size: 20px;
+        }
+
+        body {
+            font-size: 1em;
+        }
+
+        #header {
+            width: 96em;
+            height: 48.1em;
+            background-color: black;
+            margin: 0 auto;
+            background: url(../IMG/람보르기니\ 외부2.png );
+            background-size: cover;
+            background-position: bottom;
+            position: relative;
+
+
+
+        }
+
+        .header_container {
+            width: 63.9em;
+            height: 7.1em;
+            margin: 0 auto;
+            display: flex;
+            position: relative;
+        }
+
+        .header_container>a {
+            width: 15.4em;
+            text-align: center;
+            display: block;
+            text-decoration: none;
+            color: white;
+            position: relative;
+
+        }
+
+        .header_container>a>h1 {
+            width: 15.4em;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-weight: bold;
+            font-size: 31px;
+            display: block;
+        }
+
+        .nav {
+            width: 80%;
+            height: 100%;
+            line-height: 142px;
+            text-align: center;
+            white-space: nowrap;
+            display: block;
+            /* background-color: pink; */
+        }
+
+
+        .nav>li {
+            width: 16%;
+            display: inline-block;
+            position: relative;
+            /* background-color: black; */
+            font-weight: bold;
+
+        }
+
+        .nav>li>a {
+            width: 100%;
+            display: block;
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .nav>li>a::after {
+            border-bottom: 4px solid white;
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+
+        }
+
+        .nav>li>a:hover::after {
+            transition: all 250ms ease-out;
+            left: 0;
+            width: 100%;
+        }
+
+        .container {
+            width: 48.2em;
+            height: 21.35em;
+            /* background-color: black; */
+            position: absolute;
+            top: 330px;
+            left: 281px;
+            bottom: 153px;
+            /* display: none; */
+            color: white;
+            padding: 0.5em;
+
+        }
+
+        .maintext {
+            font-weight: bold;
+            font-size: 2em;
+        }
+
+        .subtext {
+            font-size: 3.1em;
+            display: block;
+            margin-top: 32px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+        }
+
+        .subfooter {
+            font-weight: 600;
+        }
+
+        .view {
+            width: 150px;
+            height: 45px;
+            box-sizing: border-box;
+            border: 1px solid white;
+            margin-top: 47px;
+            position: relative;
+
+        }
+
+        .view>a {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-decoration: none;
+            color: white;
+            padding: 13px
+        }
+
+        #content {
+            width: 96em;
+            height: 3600px;
+            margin: 0 auto;
+        }
+
+        #content>.porter {
+            width: 96em;
+            height: 65em;
+            background-color: pink;
+            position: relative;
+        }
+
+        .porterinpormation {
+            width: 100%;
+            height: 1094px;
+            background-color: white;
+            position: relative;
+            text-align: center;
+
+        }
+
+        .porterinpormation>h1 {
+            margin-top: 7.5em;
+            font-weight: bold;
+            font-size: 1.5em;
+
+        }
+
+        .porterinpormation>h3 {
+            font-size: 0.9em;
+            margin-top: 16px;
+            margin-bottom: 4em;
+            color: rgb(49, 49, 48);
+        }
+
+
+        .sheet {
+            width: 1300px;
+            height: 650px;
+            /* background-color: black; */
+            margin: 0 auto;
+            display: flex;
+
+
+        }
+
+        .sheet>img {
+            width: 400px;
+            height: 600px;
+            margin: 30px;
+            margin: 0 auto;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+
+
+        }
+
+
+        .sheet>img:nth-child(2) {
+            margin-top: 3em;
+        }
+
+        .img {
+            display: flex;
+        }
+
+        .img > img{
+            width: 30%;
+            padding: 1.5em;
+        }
+
+       
+    </style>
+
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="header_container">
+            <a href="">
+                <h1>YUNJAC</h1>
+            </a>
+
+            <ul class="nav">
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">EVENT</a></li>
+                <li><a href="#">PRVIEW</a></li>
+                <li><a href="#">COMMUNITY</a></li>
+                <li><a href="#">BRAND</a></li>
+            </ul>
+
+
+
+        </div>
+
+        <div class="container">
+
+            <b class="maintext">WHOLE PLANT EFFECT</b><br>
+            <b class="subtext">자동차, 더 빛나는 작품으로</b><br>
+            <b class="subfooter">끊임없이 순환하는 자연의 생명에너지<br>
+                차량 본연의 힘을 길러주어 완벽한 균형을 지키기 위한 노력</b><br>
+
+            <div class="view">
+                <a href="https://www.mercedes-benz.co.kr/?utm_source=naver&utm_medium=brandsearch&utm_campaign=C.P.T.RNG.ELE_NA_LA_KR_2023_EQ_tactical_2&utm_content=2023_naverbs_nbs_pc_brandkeyword_promotion_kw_2023_eq_tactical_homelink_give_n&utm_term=%EB%B2%A4%EC%B8%A0&group=all&subgroup=see-all&view=BODYTYPE"
+                    class="viewone">VIEW</a>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="content">
+        <section class="porter">
+            <div class="porterinpormation">
+                <h1>WHOLE PLANT EFFECT</h1>
+                <h3>끈임없이 순환하는 자연의 생명 에너지 3STEP</h3>
+
+                <div class="img">
+                    <img class="imge-section" src="../IMG/람보르기니내부2.jpg" alt="">
+                    <img class="imge-section" src="../IMG/람보르기니내부3.jpg" alt="">
+                    <img class="imge-section" src="../IMG/람보르기니내부4.jpg" alt="">
+                     
+                </div>
+
+                <div class="section">
+                    <h1>-차원이 다른 차량 내부 디자인-</h1>
+                    <h3>-어린뿌리를 내리는 최초의 생명 에너지</h3>
+                </div>
+                
+            </div>
+
+
+        </section>
+        <section class=""></section>
+        <section class=""></section>
+        <section class=""></section>
+
+    </section>
+
+
+
+
+</body>
+
+</html>
