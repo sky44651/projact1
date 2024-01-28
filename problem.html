@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <style>
+        html {font-size: 20px;}
+        body {font-size: 1em;font-family: 'Dongle', sans-serif}
+        /* --------------폰트 사이즈 정의--------------------- */
+
+        header {width: 100%;height: 5em;border-bottom: 2px solid black;background-color: burlywood;position: relative;}
+        header>div>h1 {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);font-size: 1.4em;font-weight: bold;}
+        #content {width: 64em;height: 250em;/* background-color: pink; */margin: 0 auto;}
+        #content>#inpormaition {width: 80%;height: 100%;float: right;/* background-color: aqua; */box-sizing: border-box;border: 1px solid black;border-left: none;padding: 2.5em;text-align: left;}
+        #inpormaition > p{display: none;}
+        #content>article {width: 20%;height: 100%;float: left;/* background-color: blue; */border: 1px solid black;box-sizing: border-box;text-align: center;padding-top: 2.5em;}
+        #content>article>h1 {font-size: 18px;font-weight: bold;cursor: pointer;}
+        button {background: inherit;border: none;box-shadow: none;border-radius: 0;padding: 0;overflow: visible;cursor: pointer;margin: 1em;}
+        
+    </style>
+
+<script>
+  $(function() {
+   $('button').on('click',function(){
+     $('#inpormaition > p').css('display', 'block');
+   })
+
+  })
+</script>
+
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>개인프로젝트시 문제 발견 문제집</h1>
+        </div>
+    </header>
+
+    <div id="content">
+
+
+        <article>
+            <button>수평 수직 정렬</button><br>
+            
+         
+        </article>
+
+            <div id="inpormaition">
+
+                <p>
+                    수평정렬 ( horizontally )<br><br>
+                    1. inline 요소를 수평 중앙정렬 시
+                    부모 요소에 text-align: center 적용<br>
+                    부모 요소인 nav 태그에 text-algin: center를 적용하면<br>
+                    인라인 태그이면서 자식 태그인 a 태그들은 중앙정렬이 된다.<br>
+
+                    <br>
+                    <br>
+
+                    block 요소를 수평 중앙정렬 시<br>
+                    block 요소가 한개일 때, 두개 이상일 때를 나누어 알아보자.
+                    <br>
+                    <br>
+
+                    1개의 block 요소를 수평 중앙정렬 할 때<br>
+
+                    block 요소는 width 속성을 따로 설정하지 않으면<br>
+                    자동으로 width: auto가 적용되므로 width 설정 후 margin: 0 auto 설정<br>
+                    <br>
+
+
+
+                    수직정렬 ( vertically )<br><br>
+                    1. inline 요소를 수직 중앙정렬 할 때<br><br>
+                    1-1. 한 줄일 경우<br>
+
+                    부모에게 disaplay: block 설정 후 height와 line-height를 같은 값으로 설정하면 된다.<br>
+                    이 때 white-space: nowrap 속성으로 자동 줄바꿈이 안되도록 해야한다.<br>
+                    <br>
+
+                    1-2. 여러 줄일 경우<br>
+
+                    부모 요소에 display: table, 자식 요소에 display: table-cell, vertical-align: middle 사용<br>
+                    <br>
+
+                    2. block 요소를 수직 중앙정렬 할 때<br><br>
+                    2-1. 정렬할 요소의 높이를 알 때<br>
+
+                    부모 요소에 position: relative, 자식 요소에 position: absolute를 적용해<br>
+                    height 값을 설정하고 top: 50%, margin을 height의 절반만큼 마이너스로 중앙 정렬<br>
+                    <br>
+                    2-2. 정렬할 요소의 높이를 모를 때<br>
+                    2-1 번의 margin-top 대신 transform: translateY(-50%)를 사용하면 된다.<br>
+                    <br>
+                    동시에 수평, 수직 정렬을 하고 싶을 때<br>
+                    1. 정렬할 요소의 width와 height를 알 때<br>
+
+                    부모 요소에 position: relative, 자식 요소에 position: absolute 적용 후<br>
+                    top: 50%, left: 50%, margin-top을 width의 절반만큼 마이너스 설정,<br>
+                    margin-left를 height의 절반만큼 마이너스로 설정<br>
+                    <br>
+                    2. 정렬할 요소의 width와 height를 모를 때<br>
+                    1번의 margin-top, margin-left 대신 transform: translateY(-50%, -50%)를 사용하면 된다.<br>
+                </p>
+
+            </div>
+        
+
+        
+    </div>
+
+</body>
+
+</html>
