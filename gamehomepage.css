@@ -6,10 +6,10 @@ body {
     /* overflow-x 는 가로축 스크롤 없에기 */
 }
 
-
+/* 해더 영역 */
 #header {
     width: 96em;
-    height: 48.1em;
+    height: 60em;
     background-color: black;
     margin: 0 auto;
     background: url(../IMG/람보르기니\ 외부2.png );
@@ -19,7 +19,7 @@ body {
     box-sizing: border-box;
 
 }
-
+/* 해더 컨텐츠 영역 */
 .header_container {
     width: 63.9em;
     height: 7.1em;
@@ -29,7 +29,7 @@ body {
     text-align: center;
 
 }
-
+/* 해더 컨텐츠 a 링크 영역 */
 .header_container>a {
     width: 15.4em;
     text-align: center;
@@ -39,7 +39,7 @@ body {
     position: relative;
 
 }
-
+/* 해더컨텐츠 영역 <로고>  */
 .header_container>a>h1 {
     width: 15.4em;
     position: absolute;
@@ -51,7 +51,7 @@ body {
     font-size: 31px;
     display: block;
 }
-
+/* 네비게이션 부모 영역 */
 .nav {
     width: 80%;
     height: 100%;
@@ -62,7 +62,7 @@ body {
     /* background-color: pink; */
 }
 
-
+/* 네비게이션 부모 아래 자식 요소 */
 .nav>li {
     width: 16%;
     display: inline-block;
@@ -71,7 +71,7 @@ body {
     font-weight: bold;
 
 }
-
+/* 네비게이션 부모 아래 자식 요소에 후손 요소 <a> */
 .nav>li>a {
     width: 100%;
     display: block;
@@ -79,7 +79,7 @@ body {
     text-decoration: none;
 
 }
-
+/* 네비게이션 부모:가상요소  */
 .nav>li>a::after {
     border-bottom: 4px solid white;
     content: "";
@@ -89,12 +89,13 @@ body {
 
 }
 
+/* 네비게이션 부모:가상요소에 마우스를 올렸을 떄  */
 .nav>li>a:hover::after {
     transition: all 250ms ease-out;
     left: 0;
     width: 100%;
 }
-
+/* .header_container 의 자식 요소 영역 */
 .container {
     width: 48.2em;
     height: 21.35em;
@@ -108,12 +109,12 @@ body {
     padding: 0.5em;
 
 }
-
+/* container 의 자식 요소 */
 .maintext {
     font-weight: bold;
     font-size: 2em;
 }
-
+/* container 의 자식 요소 */
 .subtext {
     font-size: 3.1em;
     display: block;
@@ -121,11 +122,11 @@ body {
     font-weight: bold;
     color: rgb(255, 255, 255);
 }
-
+/* container 의 자식 요소 */
 .subfooter {
     font-weight: 600;
 }
-
+/* container 의 자식 요소 */
 .view {
     width: 150px;
     height: 45px;
@@ -135,7 +136,7 @@ body {
     position: relative;
 
 }
-
+/* container 의 자식인 view 후손 요소 */
 .view>a {
     display: block;
     position: absolute;
@@ -144,7 +145,6 @@ body {
     transform: translate(-50%, -50%);
     text-decoration: none;
     color: white;
-    padding: 13px
 }
 
 #content {
@@ -201,9 +201,16 @@ body {
     border-radius: 10px;
 }
 
+.img img:hover{
+    display: block;
+    transform: scale(1.1);
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
 .twoimg {
     margin: 2em;
-}
+}   
 
 .img>div>h1 {
     font-weight: bold;
@@ -224,7 +231,7 @@ body {
     height: 680px;
     margin: 0 auto;
     /* background-color: black; */
-    background: url(/IMG/photo-45.jpg)no-repeat;
+    background: url(../IMG/람보르기니\ 외부2.png    )no-repeat;
     background-size: cover;
     position: relative;
 }
@@ -290,17 +297,9 @@ body {
 .inpormation>p:nth-child(3) {
     color: #333333;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: bold;
 }
 
-.inpormation>.alink {
-    width: 100px;
-    margin-top: 30px;
-    display: block;
-    background-color: #232323;
-    color: #333333;
-    text-decoration: none;
-}
 
 .move-list {
     width: 340px;
@@ -309,5 +308,6 @@ body {
     position: absolute;
     right: 100px;
     bottom: 60px;
-    
+
 }
+
