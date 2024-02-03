@@ -19,6 +19,7 @@ body {
     box-sizing: border-box;
 
 }
+
 /* 해더 컨텐츠 영역 */
 .header_container {
     width: 63.9em;
@@ -29,6 +30,7 @@ body {
     text-align: center;
 
 }
+
 /* 해더 컨텐츠 a 링크 영역 */
 .header_container>a {
     width: 15.4em;
@@ -39,6 +41,7 @@ body {
     position: relative;
 
 }
+
 /* 해더컨텐츠 영역 <로고>  */
 .header_container>a>h1 {
     width: 15.4em;
@@ -51,6 +54,7 @@ body {
     font-size: 31px;
     display: block;
 }
+
 /* 네비게이션 부모 영역 */
 .nav {
     width: 80%;
@@ -71,6 +75,7 @@ body {
     font-weight: bold;
 
 }
+
 /* 네비게이션 부모 아래 자식 요소에 후손 요소 <a> */
 .nav>li>a {
     width: 100%;
@@ -79,6 +84,7 @@ body {
     text-decoration: none;
 
 }
+
 /* 네비게이션 부모:가상요소  */
 .nav>li>a::after {
     border-bottom: 4px solid white;
@@ -95,6 +101,7 @@ body {
     left: 0;
     width: 100%;
 }
+
 /* .header_container 의 자식 요소 영역 */
 .container {
     width: 48.2em;
@@ -109,11 +116,13 @@ body {
     padding: 0.5em;
 
 }
+
 /* container 의 자식 요소 */
 .maintext {
     font-weight: bold;
     font-size: 2em;
 }
+
 /* container 의 자식 요소 */
 .subtext {
     font-size: 3.1em;
@@ -122,10 +131,12 @@ body {
     font-weight: bold;
     color: rgb(255, 255, 255);
 }
+
 /* container 의 자식 요소 */
 .subfooter {
     font-weight: 600;
 }
+
 /* container 의 자식 요소 */
 .view {
     width: 150px;
@@ -136,6 +147,7 @@ body {
     position: relative;
 
 }
+
 /* container 의 자식인 view 후손 요소 */
 .view>a {
     display: block;
@@ -201,7 +213,7 @@ body {
     border-radius: 10px;
 }
 
-.img img:hover{
+.img img:hover {
     display: block;
     transform: scale(1.1);
     overflow: hidden;
@@ -210,7 +222,7 @@ body {
 
 .twoimg {
     margin: 2em;
-}   
+}
 
 .img>div>h1 {
     font-weight: bold;
@@ -294,6 +306,7 @@ body {
     padding-bottom: 0.5em;
     color: #333333;
 }
+
 .inpormation>p:nth-child(3) {
     color: #333333;
     font-size: 16px;
@@ -311,3 +324,21 @@ body {
 
 }
 
+.move-list>a>img {
+    width: 170px;
+    height: 135px;
+}
+
+#footer {
+    width: 100%;
+    height: 440px;
+    background-color: black;
+    color: black;
+}
+
+#footer>div {
+    width: 1280px;
+    height: 100%;
+    background-color: pink;
+    margin: 0 auto;
+}
