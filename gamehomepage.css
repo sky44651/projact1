@@ -8,7 +8,7 @@ body {
 
 /* 해더 영역 */
 #header {
-    width: 96em;
+    width: 100vw;
     height: 60em;
     background-color: black;
     margin: 0 auto;
@@ -204,6 +204,7 @@ body {
 
 }
 
+
 .img img {
     display: block;
     width: 19em;
@@ -228,7 +229,11 @@ body {
     font-weight: bold;
     font-size: 1.1em;
     padding-bottom: 1em;
+    
+    
 }
+
+
 
 #section1 {
     margin-top: 150px;
@@ -283,6 +288,8 @@ body {
     position: absolute;
     top: 40px;
     left: 40px;
+    background: url(/IMG/비디오배경j.jpg) no-repeat;
+    background-position: center;
 }
 
 .movestyle>.inpormation {
@@ -329,16 +336,13 @@ body {
     height: 135px;
 }
 
-#footer {
-    width: 100%;
-    height: 440px;
-    background-color: black;
-    color: black;
-}
-
-#footer>div {
+#banner_container {
     width: 1280px;
-    height: 100%;
+    height: 120px;
     background-color: pink;
     margin: 0 auto;
+    margin-top: 100px;
+    position: relative;
 }
+
+
