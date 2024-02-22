@@ -6,6 +6,12 @@ body {
     /* overflow-x 는 가로축 스크롤 없에기 */
 }
 
+a{
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
 /* 해더 영역 */
 #header {
     width: 100vw;
@@ -180,7 +186,7 @@ body {
 
 }
 
-.porterinpormation>h1 {
+.porterinpormation > p {
     margin-top: 5em;
     font-weight: bold;
     font-size: 1.5em;
@@ -229,8 +235,8 @@ body {
     font-weight: bold;
     font-size: 1.1em;
     padding-bottom: 1em;
-    
-    
+
+
 }
 
 
@@ -261,15 +267,13 @@ body {
     padding: 1.2em;
 }
 
-.inporsection>.style>b {
-    font-weight: bold;
-}
+
 
 .inporsection>.style>h3 {
     font-size: 18px;
 }
 
-.inporsection>.style>h1 {
+.inporsection>.style> p {
     padding: 18px;
 }
 
@@ -336,13 +340,30 @@ body {
     height: 135px;
 }
 
-#banner_container {
-    width: 1280px;
-    height: 120px;
-    background-color: pink;
-    margin: 0 auto;
-    margin-top: 100px;
-    position: relative;
+
+
+#footer{
+    margin-top: 10em;
+    height: 250px;
+    width: 100vw;
+    background-color: black;
+   
 }
 
+#footer > table{
+    margin: 0 auto;
+    justify-content: center;
+}
 
+.table_header > a {
+    padding: 2em;
+    color: #ffffff;
+}
+
+.table_body  > a {
+    padding: 0.7em;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+   
+}
